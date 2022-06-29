@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:ital,wght@0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer base {
+  input, textarea {
+    @apply p-4 text-[#7b6c63] outline-none bg-transparent border-t-4 border-[#242424] mb-2 ml-4 placeholder-[#7b6c63] focus:placeholder-transparent
+  }
+  
+  
+}
+
+@layer components {
+  .nav-link {
+    @apply pb-2 border-b-4 border-transparent hover:border-[#7b6c63]
+  }
+}
